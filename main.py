@@ -1,8 +1,7 @@
 import shutil
 import os
 from datetime import datetime
-import time
-from time import gmtime, strftime
+from time import strftime
 
 src_base = "/home/skaranzx16/Downloads/"
 dst_base = "/home/skaranzx16/"
