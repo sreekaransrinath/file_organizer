@@ -1,7 +1,5 @@
 # file_organizer
 
-Very much a work in progress.
-
 A script that looks through your any folder you tell it to and moves the files to respective subfolders based on the file type.
 
 The organizational system for this were borrowed from github.com/kallehallden, but I feel like my implementation is different enough for this to deserve it's own repo.
