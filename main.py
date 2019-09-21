@@ -63,33 +63,14 @@ def movefile(src, dst):
     os.system(command)
 
 #buildtree() is a function that checks whether you have the file organization system in place. If not, it creates the necessary trees for you
-def buildtree(dst_base):
-    try:
-        os.chdir(dst_base)
-        os.mkdir('Media')
-        os.chdir('Media')
-        for name in ('Video', 'Audio', 'Images'):
-            os.mkdir(name)
-        os.chdir('..')
-        os.mkdir('Text')
-        os.chdir('Text')
-        for name in ('TextFiles', 'PDF', 'Word', 'Other', 'Spreadsheets', 'Presentations'):
-            os.mkdir(name)
-        os.chdir('Other')
-        os.mkdir('System')
-        os.chdir('..')
-        os.chdir('..')
-        os.mkdir('Programming')
-        os.chdir('Programming')
-        for name in ('Java', 'C++andC', 'Dart', 'Shell', 'Python', 'HTML', 'Swift', 'Database'):
-            os.mkdir(name)
-        os.chdir('..')
-        os.mkdir('Other')
-        os.chdir('Other')
-        for name in ('Uncategorized', 'Executables', 'Compressed', 'Fonts', 'Internet', 'Disc'):
-            os.mkdir(name)
-    except Exception:
-        os.path.exists(dst_base + 'Media') and os.path.exists(dst_base + 'Programming') and os.path.exists(dst_base + 'Text') and os.path.exists(dst_base + 'Other')
+def buildtree():
+    for path in extension_dict.values():
+        command = dst_base + path
+        try:
+            print(command)
+            os.makedirs(command)
+        except Exception:
+            os.path.exists(command)
 
 
 extension_dict = {
