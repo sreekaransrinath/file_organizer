@@ -47,6 +47,12 @@ def cleandesk():
                 else:
                     print('Alright, I\'ll leave it alone')
                     print(filename + ' was not transferred from ' + src_base + ' to ', dest)
+                    
+            if file_exists == False:
+                print(filepath)
+                movefile(filepath, dest)
+                print(dest)
+                print(filename + ' was transferred from ' + src_base + ' to ', dest)
 
             if not os.path.isfile(filepath):
                 print(filename, ' was deleted from ', src_base, '\n\n')
