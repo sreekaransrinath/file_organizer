@@ -8,6 +8,7 @@ def cleandesk():
         i = 1
         split = os.path.splitext(src_base + filename)
         root_name = split[0]
+        print(root_name)
         extension = split[1]
         print('The file ', root_name, ' is of the type ', extension)
         try:
@@ -36,13 +37,20 @@ def cleandesk():
                     while file_exists:
                         i += 1
                         newname = root_name + str(i) + extension
-                        newname = newname.split("/")[3]
-                        file_exists = os.path.isfile(dest + '/' + newname)
+                        newname1 = newname.split("/")
+                        ix = len(newname1)-1
+                        print(ix)
+                        filename = newname1[ix]
+                        print(newname)
+                        print(filepath)
                         os.rename(filepath, newname)
+                        print(filepath)
                         print('Trial number ', i, 'The modified source filepath is ', filepath, 'And the new name is ', newname)
-                        movefile(filepath, dest)
+                        movefile(newname, dest)
                         print(dest)
+                        filepath = newname
                         print(filename + ' was transferred from ' + src_base + ' to ', dest, 'A name clash occurred in the process but was fixed.')
+                        file_exists = os.path.isfile(dest + '/' + newname)
                 
                 else:
                     print('Alright, I\'ll leave it alone')
