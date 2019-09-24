@@ -130,6 +130,8 @@ extension_dict = {
     '.swift': "Programming/Swift",
     '.html': "Programming/HTML",
     '.h': "Programming/C++andC",
+    '.cpp': "Programming/C++andC",
+    '.java': "Programming/Java",
     # Spreadsheets
     '.ods': "Text/Spreadsheets",
     '.xlr': "Text/Spreadsheets",
