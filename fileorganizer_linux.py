@@ -2,14 +2,16 @@ import os
 from datetime import datetime
 from time import strftime
 import extensiondict
+import sys 
 
 
 # The src_base_folder is the folder from which all files are copied out of
-src_base = "/home/skaranzx16/Downloads/"  # Enter your source folder path here i.e., the folder you intend to clean up
+src_base = sys.argv[1]  # Enter your source folder path here i.e., the folder you intend to clean up
 # dst_base is the base destination folder off of which the filetype and year based file directory trees begin
-dst_base = "/home/skaranzx16/"  # Enter your base destination folder path here
+dst_base = sys.argv[2]  # Enter your base destination folder path here
 
 def cleandesk():
+    
     for filename in os.listdir(src_base):
         i = 1
 
@@ -40,7 +42,7 @@ def cleandesk():
             
             print('The file name is ', filename)
 
-            stripped_filename = filename.replace(" ", "\\ ")
+            stripped_filename = filename.replace(" ", "\\ ").replace("'", "\\" + "\'")
             print('The stripped file name is ', stripped_filename)
 
             # file_exists_in_dest checks if the specified directory is a file, which indicates that the filename in fact exists. If it does, the block underneath this line either creates a new name by appending numbers to the end of the filename or leaves the file alone, based on a decision made by the user
@@ -51,12 +53,14 @@ def cleandesk():
             filepath = src_base + stripped_filename
             print('The final source file path to be passed as argument is ', filepath)
 
-            file_exists_in_src = os.path.isfile(filepath)
+            file_exists_in_src = os.path.isfile(src_base + filename)
+            print(file_exists_in_src)
 
             if file_exists_in_dest:
                 moveornot = input(filename + ' already exists in the destination directory. \nWould you like me to move the file to the destination after renaming it (or) leave it alone? \nPress 1 for the first option and press any other key to choose the second. ')
 
                 if moveornot == '1':
+
                     while file_exists_in_dest:
                         i += 1
                         newpath = root_name + str(i) + extension
@@ -74,7 +78,9 @@ def cleandesk():
                     print(filename + ' was not transferred from ' + src_base + ' to ', dest)
 
             else:
+
                 if file_exists_in_src and not file_exists_in_dest:
+                    print('The file exists in source and not in dest. Transferring... ')
                     movefile(filepath, dest)
 
             if not os.path.isfile(src_base + filename):
@@ -98,13 +104,17 @@ def movefile(src, dst):
 def buildtree():
     now = datetime.now()
     year = now.strftime('%Y')
+
     for path in extensiondict.extension_dict.values():
         command = dst_base + path + '/' + year + '/'
+
         try:
+
             if not os.path.exists(command):
                 print('Does the path exist?', os.path.exists(command))
                 print(command)
                 os.makedirs(command)
+
         except FileExistsError:
             print("Directory already exists; not created")
 
