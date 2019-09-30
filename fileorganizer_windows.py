@@ -5,9 +5,9 @@ import extensiondict
 
 
 # The src_base_folder is the folder from which all files are copied out of
-src_base = "C:/Users/HP-PC/Desktop/"  # Enter your source folder path here i.e., the folder you intend to clean up
+src_base = sys.argv[1]  # Enter your source folder path here i.e., the folder you intend to clean up
 # dst_base is the base destination folder off of which the filetype and year based file directory trees begin
-dst_base = "C:/Users/HP-PC/googleBackupFolder/"  # Enter your base destination folder path here
+dst_base = sys.argv[2]  # Enter your base destination folder path here
 
 def cleandesk():
     for filename in os.listdir(src_base):
