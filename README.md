@@ -9,3 +9,14 @@ Tried using the shutil module to do shutil.copy2() at first, but realized that t
 AFAIK all issues that existed have been resolved with the latest commit, but I can still think of a ton of features that I could still implement in this.
 
 Will keep updating as I work on this.
+
+
+# Command Line Arguments
+
+You can now run the script from the command line and provide the source and base destination folders as arguments.
+
+eg: python3 fileorganizer.py /home/skaranzx16/Downloads/ /home/skaranzx16/
+
+where /home/skaranzx16/Downloads/ is the source folder and /home/skaranzx16/ is the base destination folder.
+
+Please note that as of now, the forward slashes succeeding the Downloads in source path and skaranzx16 in dest path are necessary, else the script won't run.
