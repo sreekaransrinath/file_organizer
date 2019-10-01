@@ -27,6 +27,7 @@ extension_dict = {
     '.wks'   : "Text/TextFiles",
     '.wps'   : "Text/TextFiles",
     '.wpd'   : "Text/TextFiles",
+	
     # Video
     '.3g2'   : "Media/Video",
     '.3gp'   : "Media/Video",
@@ -133,6 +134,10 @@ extension_dict = {
     '.cpp'   : "Programming/C++andC",
     '.java'  : "Programming/Java",
     '.m'     : "Programming/MATLAB",
+	'.json'  : "Programming/JSON",
+	'.cs'    : "Programming/C#",
+	
+	
     # Spreadsheets
     '.ods'   : "Text/Spreadsheets",
     '.xlr'   : "Text/Spreadsheets",
