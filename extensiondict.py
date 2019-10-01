@@ -77,17 +77,21 @@ extension_dict = {
     # Compressed
     '.7z'    : "Other/Compressed",
     '.arj'   : "Other/Compressed",
+    '.cab'   : "Other/Compressed",
     '.deb'   : "Other/Compressed",
+    '.dgm'   : "Other/Compressed",
+    '.gz'    : "Other/Compressed",
     '.pkg'   : "Other/Compressed",
     '.rar'   : "Other/Compressed",
     '.rpm'   : "Other/Compressed",
-    '.gz'    : "Other/Compressed",
+    '.tgz'   : "Other/Compressed",
     '.xz'    : "Other/Compressed",
     '.z'     : "Other/Compressed",
     '.zip'   : "Other/Compressed",
-    '.tgz'   : "Other/Compressed",
+    
     # Disc
     '.bin'   : "Other/Disc",
+    '.cue'   : "Other/Disc",
     '.dmg'   : "Other/Disc",
     '.iso'   : "Other/Disc",
     '.toast' : "Other/Disc",
@@ -113,10 +117,16 @@ extension_dict = {
     '.jar'   : "Other/Executables",
     '.wsf'   : "Other/Executables",
     # Fonts
+    '.afm'   : "Other/Fonts",
     '.fnt'   : "Other/Fonts",
     '.fon'   : "Other/Fonts",
     '.otf'   : "Other/Fonts",
     '.ttf'   : "Other/Fonts",
+    '.ufo'   : "Other/Fonts",
+    # Geographic Information System
+    '.dem'   : "USGS geographic location",
+    '.gml'   : "geographic markup file",
+    '.shp'   : "imagry shape file",
     # Presentations
     '.key'   : "Text/Presentations",
     '.odp'   : "Text/Presentations",
@@ -137,6 +147,7 @@ extension_dict = {
     '.sh'    : "Programming/Shell",
     '.swift' : "Programming/Swift",
     # Spreadsheets
+    '.cvs'   : "Text/Spreadsheets",
     '.ods'   : "Text/Spreadsheets",
     '.xlr'   : "Text/Spreadsheets",
     '.xls'   : "Text/Spreadsheets",
