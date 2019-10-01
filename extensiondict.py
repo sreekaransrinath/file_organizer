@@ -133,6 +133,9 @@ extension_dict = {
     '.cpp'   : "Programming/C++andC",
     '.java'  : "Programming/Java",
     '.m'     : "Programming/MATLAB",
+    '.vala'  : "Programming/Vala",
+    '.R'     : "Programming/R",
+    '.cs'    : "Programming/C#",
     # Spreadsheets
     '.ods'   : "Text/Spreadsheets",
     '.xlr'   : "Text/Spreadsheets",
