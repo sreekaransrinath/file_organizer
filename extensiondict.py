@@ -134,6 +134,7 @@ extension_dict = {
     '.java'  : "Programming/Java",
     '.lua'   : "Programming/LUA",
     '.m'     : "Programming/MATLAB",
+    '.scala' : "Programming/Scala",
     '.vala'  : "Programming/Vala",
     '.R'     : "Programming/R",
     '.cs'    : "Programming/C#",
