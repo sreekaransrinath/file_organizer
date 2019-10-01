@@ -1,8 +1,6 @@
-import os
+import os, extensiondict, sys
 from datetime import datetime
 from time import strftime
-import extensiondict
-import sys 
 
 
 # The src_base_folder is the folder from which all files are copied out of
