@@ -57,6 +57,7 @@ extension_dict = {
     '.tif'   : "Media/Images",
     '.tiff'  : "Media/Images",
     '.CR2'   : "Media/Images",
+    '.HEIC'  : "Media/Images",
     # Internet
     '.asp'   : "Other/Internet",
     '.aspx'  : "Other/Internet",
