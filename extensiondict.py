@@ -29,6 +29,7 @@ extension_dict = {
     '.wks'   : "Text/TextFiles",
     '.wps'   : "Text/TextFiles",
     '.wpd'   : "Text/TextFiles",
+    '.xps'   : "Text/TextFiles",
     # Video
     '.3g2'   : "Media/Video",
     '.3gp'   : "Media/Video",
@@ -67,6 +68,7 @@ extension_dict = {
     '.cgi'   : "Other/Internet",
     '.pl'    : "Other/Internet",
     '.css'   : "Other/Internet",
+    '.scss'  : "Other/Internet",
     '.htm'   : "Other/Internet",
     '.js'    : "Other/Internet",
     '.jsp'   : "Other/Internet",
@@ -106,12 +108,15 @@ extension_dict = {
     '.json'  : "Programming/Database",
     # Executables
     '.apk'   : "Other/Executables",
+    '.aab'   : "Other/Executables",
     '.bat'   : "Other/Executables",
     '.com'   : "Other/Executables",
     '.exe'   : "Other/Executables",
     '.gadget': "Other/Executables",
     '.jar'   : "Other/Executables",
     '.wsf'   : "Other/Executables",
+    '.ws'    : "Other/Executables",
+    '.wsh'   : "Other/Executables",
     # Fonts
     '.fnt'   : "Other/Fonts",
     '.fon'   : "Other/Fonts",
