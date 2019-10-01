@@ -16,6 +16,8 @@ extension_dict = {
     '.wma'   : "Media/Audio",
     '.wpl'   : "Media/Audio",
     '.m3u'   : "Media/Audio",
+    '.vox'   : "Media/Audio",
+    '.8svx'  : "Media/Audio",
     # Text
     '.txt'   : "Text/TextFiles",
     '.doc'   : "Text/Word",
