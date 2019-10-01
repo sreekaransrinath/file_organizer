@@ -4,6 +4,7 @@ def getpath(extension):
 extension_dict = {
     # No name
     'noname' : "Other/Uncategorized",
+	'.vcf'   : "Other/Uncategorized",
     # Audio
     '.aif'   : "Media/Audio",
     '.cda'   : "Media/Audio",
@@ -87,6 +88,8 @@ extension_dict = {
     '.php'   : "Other/Internet",
     '.rss'   : "Other/Internet",
     '.xhtml' : "Other/Internet",
+	'.torrent': "Other/Internet",
+	
     # Compressed
     '.7z'    : "Other/Compressed",
     '.arj'   : "Other/Compressed",
@@ -159,6 +162,7 @@ extension_dict = {
     '.py'    : "Programming/Python",
     '.sh'    : "Programming/Shell",
     '.swift' : "Programming/Swift",
+	'.sln'   : "Programming/VisualStudio",
 
     # Spreadsheets
     '.ods'   : "Text/Spreadsheets",
