@@ -19,4 +19,3 @@ eg: python3 fileorganizer.py /home/skaranzx16/Downloads/ /home/skaranzx16/
 
 where /home/skaranzx16/Downloads/ is the source folder and /home/skaranzx16/ is the base destination folder.
 
-Please note that as of now, the forward slashes succeeding the Downloads in source path and skaranzx16 in dest path are necessary, else the script won't run.
