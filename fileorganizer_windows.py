@@ -2,12 +2,18 @@ import os
 from datetime import datetime
 from time import strftime
 import extensiondict
-
+import sys
 
 # The src_base_folder is the folder from which all files are copied out of
 src_base = sys.argv[1]  # Enter your source folder path here i.e., the folder you intend to clean up
 # dst_base is the base destination folder off of which the filetype and year based file directory trees begin
 dst_base = sys.argv[2]  # Enter your base destination folder path here
+
+if not src_base.endswith('/'):
+    src_base = src_base + '/'
+
+if not dst_base.endswith('/'):
+    dst_base = dst_base + '/'
 
 def cleandesk():
     for filename in os.listdir(src_base):
