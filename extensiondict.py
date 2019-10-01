@@ -32,6 +32,10 @@ extension_dict = {
     '.wps'   : "Text/TextFiles",
     '.wpd'   : "Text/TextFiles",
     '.xps'   : "Text/TextFiles",
+    '.md'    : "Text/TextFiles",
+    '.ipynb' : "Text/Notebook/Jupyter",
+    '.nb'    : "Text/Notebook/Wolfram",
+    '.cdf'   : "Text/Notebook/CDFPlayer",
     # Video
     '.3g2'   : "Media/Video",
     '.3gp'   : "Media/Video",
