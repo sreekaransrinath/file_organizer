@@ -27,6 +27,7 @@ extension_dict = {
     '.odt'   : "Text/Word",
     '.pdf'   : "Text/PDF",
     '.rtf'   : "Text/TextFiles",
+    '.md'    : "Text/TextFiles",
     '.tex'   : "Text/TextFiles",
     '.wks'   : "Text/TextFiles",
     '.wps'   : "Text/TextFiles",
