@@ -4,6 +4,7 @@ def getpath(extension):
 extension_dict = {
     # No name
     'noname' : "Other/Uncategorized",
+	'.vcf'   : "Other/Uncategorized",
     # Audio
     '.aif'   : "Media/Audio",
     '.cda'   : "Media/Audio",
@@ -19,7 +20,6 @@ extension_dict = {
     '.m3u'   : "Media/Audio",
     '.vox'   : "Media/Audio",
     '.8svx'  : "Media/Audio",
-    #-
     '.sdt'  : "Media/Audio",
     '.mka'  : "Media/Audio",
     '.ac3'  : "Media/Audio",
@@ -42,8 +42,8 @@ extension_dict = {
     '.wks'   : "Text/TextFiles",
     '.wps'   : "Text/TextFiles",
     '.wpd'   : "Text/TextFiles",
+	 '.xps'   : "Text/TextFiles",
     '.xps'   : "Text/TextFiles",
-    #-
     '.apt'   : "Text/TextFiles",
     '.rft'   : "Text/TextFiles",
     '.plain'   : "Text/TextFiles",
@@ -51,7 +51,6 @@ extension_dict = {
     '.1st'   : "Text/TextFiles",
     '.602'   : "Text/TextFiles",
     '.ascii'   : "Text/TextFiles",
-
     # Video
     '.3g2'   : "Media/Video",
     '.3gp'   : "Media/Video",
@@ -117,15 +116,13 @@ extension_dict = {
     '.php'   : "Other/Internet",
     '.rss'   : "Other/Internet",
     '.xhtml' : "Other/Internet",
-    #-
+	'.torrent': "Other/Internet",
     '.dhtml' : "Other/Internet",
     '.zhtml' : "Other/Internet",
     '.vrt' : "Other/Internet",
     '.jspa' : "Other/Internet",
     '.whtt' : "Other/Internet",
     '.fmp' : "Other/Internet",
-
-
     # Compressed
     '.7z'    : "Other/Compressed",
     '.arj'   : "Other/Compressed",
@@ -209,6 +206,8 @@ extension_dict = {
     '.py'    : "Programming/Python",
     '.sh'    : "Programming/Shell",
     '.swift' : "Programming/Swift",
+	'.sln'   : "Programming/VisualStudio",
+
     # Spreadsheets
     '.cvs'   : "Text/Spreadsheets",
     '.ods'   : "Text/Spreadsheets",
