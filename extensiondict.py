@@ -795,9 +795,12 @@ extension_dict = {
 	'.qcow'  : "Other/VMs",
 	'.qcow2' : "Other/VMs",
 	'.qed'   : "Other/VMs",
+	'.ova'   : "Other/VMs",
+	'.ovf'   : "Other/VMs",
 
 }
     # Programming
+    '.Dockerfile'             : "Programming/Docker",
     '.abap'                   : "Programming/ABAP",
     '.asc'                    : "Programming/AGS Script",
     '.ash'                    : "Programming/AGS Script",
