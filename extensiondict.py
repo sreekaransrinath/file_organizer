@@ -19,6 +19,16 @@ extension_dict = {
     '.m3u'   : "Media/Audio",
     '.vox'   : "Media/Audio",
     '.8svx'  : "Media/Audio",
+    #-
+    '.sdt'  : "Media/Audio",
+    '.mka'  : "Media/Audio",
+    '.ac3'  : "Media/Audio",
+    '.m3u8'  : "Media/Audio",
+    '.m4a'  : "Media/Audio",
+    '.mp2'  : "Media/Audio",
+    '.mdc'  : "Media/Audio",
+
+
     # Text
     '.txt'   : "Text/TextFiles",
     '.doc'   : "Text/Word",
@@ -33,6 +43,15 @@ extension_dict = {
     '.wps'   : "Text/TextFiles",
     '.wpd'   : "Text/TextFiles",
     '.xps'   : "Text/TextFiles",
+    #-
+    '.apt'   : "Text/TextFiles",
+    '.rft'   : "Text/TextFiles",
+    '.plain'   : "Text/TextFiles",
+    '.rtx'   : "Text/TextFiles",
+    '.1st'   : "Text/TextFiles",
+    '.602'   : "Text/TextFiles",
+    '.ascii'   : "Text/TextFiles",
+
     # Video
     '.3g2'   : "Media/Video",
     '.3gp'   : "Media/Video",
@@ -51,6 +70,16 @@ extension_dict = {
     '.swf'   : "Media/Video",
     '.vob'   : "Media/Video",
     '.wmv'   : "Media/Video",
+    #-
+    '.3gpp'   : "Media/Video",
+    '.mk3d'   : "Media/Video",
+    '.m15'   : "Media/Video",
+    '.mp4v'   : "Media/Video",
+    '.hevc'   : "Media/Video",
+    '.264'   : "Media/Video",
+    '.mpeg4'   : "Media/Video",
+    '.xvid'   : "Media/Video",
+
     # Images
     '.ai'    : "Media/Images",
     '.asc'   : "Media/Adobe/Flash",
@@ -87,6 +116,15 @@ extension_dict = {
     '.php'   : "Other/Internet",
     '.rss'   : "Other/Internet",
     '.xhtml' : "Other/Internet",
+    #-
+    '.dhtml' : "Other/Internet",
+    '.zhtml' : "Other/Internet",
+    '.vrt' : "Other/Internet",
+    '.jspa' : "Other/Internet",
+    '.whtt' : "Other/Internet",
+    '.fmp' : "Other/Internet",
+
+
     # Compressed
     '.7z'    : "Other/Compressed",
     '.arj'   : "Other/Compressed",
