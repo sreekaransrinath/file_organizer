@@ -135,7 +135,7 @@ extension_dict = {
     '.class' : "Programming/Java",
     '.cpp'   : "Programming/C++andC",
     '.dart'  : "Programming/Dart",
-    '.gml'   : "Programming/ geographic markup file",
+    '.gml'   : "Programming/Geographic-Markup-File",
     '.h'     : "Programming/C++andC",
     '.html'  : "Programming/HTML",
     '.java'  : "Programming/Java",
