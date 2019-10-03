@@ -42,13 +42,13 @@ def cleandesk(src_base, dst_base):
             dest = dest + "/" + year
             print("Destination folder with year added is", dest)
 
-            year_exists = os.path.exists(dest)
-            print("Does the appropriate year directory exist? ", year_exists)
+            final_path_exists = os.path.exists(dest)
+            print("Does the appropriate destination directory exist? ", final_path_exists)
 
-            if not year_exists:
+            if not final_path_exists:
                 os.makedirs(dest)
-                year_exists = os.path.exists(dest)
-                print("The year directory now exists.")
+                final_path_exists = os.path.exists(dest)
+                print("The destination directory now exists.")
 
             print('The file name is ', filename)
 
@@ -117,31 +117,11 @@ def movefile(src, dst):
     os.system(command)
     print("The file was successfully transferred")
 
-# buildtree() is a function that checks whether you have the file organization
-# system in place. If not, it creates the necessary trees for you
-def buildtree(dst_base):
-    now = datetime.now()
-    year = now.strftime('%Y')
-
-    for path in extensiondict.extension_dict.values():
-        command = dst_base + path + '/' + year + '/'
-
-        try:
-
-            if not os.path.exists(command):
-                print('Does the path exist?', os.path.exists(command))
-                print(command)
-                os.makedirs(command)
-
-        except FileExistsError:
-            print("Directory already exists; not created")
-
 def run():
     """
     Orchestrator to run the functions
     """
     src_base, dst_base = cmd_args()
-    buildtree(dst_base)
     cleandesk(src_base, dst_base)
 
 if __name__ == "__main__":
