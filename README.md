@@ -11,7 +11,7 @@ You can run the script from the command line and provide the source and base des
 
 To run the script from cmd, cd to the project directory, and 
 
-   # python3 fileorganizer_windows.py <source folder> <base destination folder> 
+   python3 fileorganizer_windows.py <source folder> <base destination folder> 
 
 If you're running Linux, run fileorganizer_linux.py
 
