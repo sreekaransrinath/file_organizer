@@ -17,5 +17,5 @@ You can now run the script from the command line and provide the source and base
 
 eg: python3 fileorganizer.py /home/skaranzx16/Downloads/ /home/skaranzx16/
 
-where /home/skaranzx16/Downloads/ is the source folder and /home/skaranzx16/ is the base destination folder.
+where   /home/skaranzx16/Downloads/   is the source folder and   /home/skaranzx16/   is the base destination folder.
 
