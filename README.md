@@ -13,6 +13,8 @@ To run the script from cmd, cd to the project directory, and run the following c
 
             python3 fileorganizer_windows.py source_folder base_destination_folder 
 
+Replace source_folder and base_destination_folder as per your requirements.
+
 If you're running Linux, run fileorganizer_linux.py
 
 
