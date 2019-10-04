@@ -13,7 +13,8 @@ To run the script from cmd, cd to the project directory, and run the following c
 
             python fileorganizer_windows.py source_folder base_destination_folder 
             
-or 
+            (or)
+            
             python3 fileorganizer_windows.py source_folder base_destination_folder
             
 depending on what OS you're running            
