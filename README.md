@@ -4,18 +4,16 @@ A script that looks through any folder you tell it to and moves the files to res
 
 The organizational system for this was borrowed from github.com/kallehallden, but I feel like my implementation is different enough for this to deserve it's own repo.
 
-Tried using the shutil module to do shutil.copy2() at first, but realized that that was erasing parts of metadata that I wanted to preserve for files, so I've switched to using the os module to move files.
-
-AFAIK all issues that existed have been resolved with the latest commit, but I can still think of a ton of features that I could still implement in this.
-
-Will keep updating as I work on this.
-
 
 # Command Line Arguments
 
-You can now run the script from the command line and provide the source and base destination folders as arguments.
+You can run the script from the command line and provide the source and base destination folders as arguments. No additional dependancies need to be installed, all packages used are part of the Python Standard Library
 
-eg: python3 fileorganizer.py /home/skaranzx16/Downloads/ /home/skaranzx16/
+To run the script from cmd, cd to the project directory, and 
 
-where   /home/skaranzx16/Downloads/   is the source folder and   /home/skaranzx16/   is the base destination folder.
+   # python3 fileorganizer_windows.py <source folder> <base destination folder> 
+
+If you're running Linux, run fileorganizer_linux.py
+
+
 
