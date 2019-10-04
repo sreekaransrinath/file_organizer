@@ -9,9 +9,9 @@ The organizational system for this was borrowed from github.com/kallehallden, bu
 
 You can run the script from the command line and provide the source and base destination folders as arguments. No additional dependancies need to be installed, all packages used are part of the Python Standard Library
 
-To run the script from cmd, cd to the project directory, and 
+To run the script from cmd, cd to the project directory, and run the following command
 
-   python3 fileorganizer_windows.py source_folder base_destination_folder 
+            python3 fileorganizer_windows.py source_folder base_destination_folder 
 
 If you're running Linux, run fileorganizer_linux.py
 
