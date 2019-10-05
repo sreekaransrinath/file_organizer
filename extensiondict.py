@@ -5,7 +5,7 @@ extension_dict = {
     # No name
     'noname' : "Other/Uncategorized",
 	'.vcf'   : "Other/Uncategorized",
-    
+    '.msg': "Outlook Message",
     # Media
 	'.8svx'        : "Media/Audio",
 	'.aac'         : "Media/Audio",
