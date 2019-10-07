@@ -495,7 +495,7 @@ extension_dict = {
     '.tmp'      : "Text/Other/System",
 
     #Other
-    '.gam'         : "Saved Game File"
+    '.gam'         : "Saved Game File",
     '.asp'         : "Other/Internet",
     '.aspx'        : "Other/Internet",
     '.cer'         : "Other/Internet",
