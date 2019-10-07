@@ -242,6 +242,10 @@ extension_dict = {
 	'.jpeg'        : "Media/Images",
 	'.png'         : "Media/Images",
 	'.ps'          : "Media/Images",
+    '.3dm'         : "Media/Images",
+    '.3ds'         : "Media/Images",
+    '.max'         : "Media/Images",
+    '.obj'         : "Media/Images",
 	'.psd'         : "Media/Images",
 	'.pbj'         : "Media/Images",
 	'.svg'         : "Media/Images",
@@ -491,6 +495,7 @@ extension_dict = {
     '.tmp'      : "Text/Other/System",
 
     #Other
+    '.gam'         : "Saved Game File"
     '.asp'         : "Other/Internet",
     '.aspx'        : "Other/Internet",
     '.cer'         : "Other/Internet",
@@ -515,6 +520,9 @@ extension_dict = {
     '.whtt'        : "Other/Internet",
     '.fmp'         : "Other/Internet",
     '.7z'          : "Other/Compressed",
+    '.cbr'    	   : "Other/Compressed",
+    '.sitx'        : "Other/Compressed",
+    '.zipx'	       : "Other/Compressed",
     '.arc'         : "Other/Compressed",
     '.arj'         : "Other/Compressed",
     '.cab'         : "Other/Compressed",
@@ -666,6 +674,9 @@ extension_dict = {
     '.eea'         : "Other/Encrypted",
     '.tc'          : "Other/Encrypted",
     '.kode'        : "Other/Encrypted",
+    '.hqx'         : "Other/Encoded",
+    '.mim'	       : "Multi-Purpose Internet Mail Message File",
+    '.uue'         : "Uuencoded File",
 
     # Programming
     '.c'                  : "Programming/C++andC",
