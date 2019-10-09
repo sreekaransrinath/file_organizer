@@ -1007,6 +1007,7 @@ extension_dict = {
     '.hlsli'              : "Programming/HLSL",
     '.hh'                 : "Programming/Hack",
     '.php'                : "Programming/Hack",
+    '.seq'		  : "Programming/Hadoop"
     '.hb'                 : "Programming/Harbour",
     '.hs'                 : "Programming/Haskell",
     '.hsc'                : "Programming/Haskell",
@@ -1556,5 +1557,5 @@ extension_dict = {
     '.wdd'                : "Programming/Database",
     '.ckp'                : "Programming/Database",
     '.dtsx'               : "Programming/Database",
-    '.sqlite3'            : "Programming/Database",
+    '.sqlite3'            : "Programming/Database", 
 }
