@@ -7,8 +7,7 @@ import extensiondict
 
 def cmd_args():
     src_base = sys.argv[1]  # The src_base is the folder path from which all files are copied out of
-    dst_base = sys.argv[2]
-    # dst_base is the base destination folder path off of which all files are grouped off
+    dst_base = sys.argv[2]  # dst_base is the base destination folder path off of which all files are grouped off
 
     if not src_base.endswith('/'):
         src_base = src_base + '/'
@@ -26,20 +25,20 @@ def cleandesk(src_base, dst_base):
         split = os.path.splitext(src_base + filename)
         root_name = split[0]
         extension = split[1]
-        print('The file ', root_name, ' is of the type ', extension)
+        print(f'The file {root_name} is of the type {extension}')
 
         try:
        # Dest is the final argument for destination folder that I feed into
        # the file copy method. It is updated with the appropriate filetype_and
        # year-based directories using conditionals below
             dest = dst_base + extensiondict.extension_dict[extension.lower()]
-            print('The destination folder based on file type is ', dest)
+            print(f'The destination folder based on file type is {dest}')
 
             mdate = os.path.getmtime(src_base + filename)
             year = datetime.fromtimestamp(int(mdate)).strftime("%Y")
-            print('The year of modification for this file is', year)
+            print(f'The year of modification for this file is {year}')
 
-            dest = dest + "/" + year
+            dest = f'{dest}/{year}'
             print("Destination folder with year added is", dest)
 
             final_path_exists = os.path.exists(dest)

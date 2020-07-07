@@ -1044,7 +1044,7 @@ extension_dict = {
     '.hlsli'              : "Programming/HLSL",
     '.hh'                 : "Programming/Hack",
     '.php'                : "Programming/Hack",
-    '.seq'		  : "Programming/Hadoop"
+    '.seq'		  : "Programming/Hadoop",
     '.hb'                 : "Programming/Harbour",
     '.hs'                 : "Programming/Haskell",
     '.hsc'                : "Programming/Haskell",
