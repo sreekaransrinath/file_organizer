@@ -2,7 +2,7 @@
 
 A script that looks through any folder you tell it to and moves the files to respective subfolders based on the file type.
 
-The organizational system for this was borrowed from github.com/kallehallden, but I feel like my implementation is different enough for this to deserve it's own repo.
+The organizational system for this was borrowed from github.com/kallehallden, but I feel like my implementation is different enough for this to deserve its own repo.
 
 
 # Command Line Arguments
