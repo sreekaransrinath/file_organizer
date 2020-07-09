@@ -1,7 +1,6 @@
 # Extension to file type mapping
 # All lines starting with # are marked as comments
 # Format: .extension : main_type[/sub_type1] [subtype2]
-# To make changes to this file please use extensionutil.py
 
 
 # No name
