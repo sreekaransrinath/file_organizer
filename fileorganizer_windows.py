@@ -1,3 +1,18 @@
+"""Help on module fileorganizer
+NAME
+    fileorganizer
+
+DESCRIPTION
+    This script allows the user to look through any folder and move the files to their respective subfolders based on the file type.
+
+FUNCTIONS
+    cmd_args()
+        Splits the command line arguments into source base and destination base
+
+    cleandesk(src_base, dst_base)
+
+"""
+
 import os
 import sys
 from datetime import datetime
@@ -5,6 +20,12 @@ import extensiondict
 
 
 def cmd_args():
+    """Splits the command line arguments into source base and destination base
+
+    Returns:
+    src_base(str), dst_base(str)
+    """
+
     src_base = sys.argv[1]  # The src_base is the folder path from which all files are copied out of
     dst_base = sys.argv[2]  # dst_base is the base destination folder path off of which all files are grouped off
 
@@ -18,6 +39,12 @@ def cmd_args():
     return src_base, dst_base
 
 def cleandesk(src_base, dst_base):
+    """ Copies files from source directory to destionation directory while sorting them according to extension and date of creation
+
+    Parameters:
+        src_base(str): path to the source directory
+        dst_base(str): path to the destination directory
+    """
     for filename in os.listdir(src_base):
         i = 1
         # This splits the file into file name and extension in order to process file type
@@ -107,6 +134,14 @@ def cleandesk(src_base, dst_base):
 
 
 def movefile(src, filename, dst):
+    """Moves a file from the source directory to destination directory
+
+    Parameters:
+        src (str):  The source directory containing the file
+        filename (str): The filename of the file to be moved
+        dst(str): The destination directory
+    """
+
     print("Home Directory is ", os.path.expanduser("~"))
     os.chdir(os.path.expanduser("~"))
     os.chdir(src)
