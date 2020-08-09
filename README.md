@@ -36,6 +36,4 @@ python3 fileorganizer_linux.py [source_folder] [base_destination_folder]
 ```
 Replace the [source_folder] [base_destination_folder] with appropriate path for the respective directories.
 
-
-
-
+###Happy Organizing
