@@ -1,23 +1,41 @@
 # file_organizer
 
-A script that looks through any folder you tell it to and moves the files to respective subfolders based on the file type.
+This script is designed to sort the contents of a target folder/directory into sub-folders-sub-directories based on the file type.
+
+# Prerequisites
+This script was written using stock Python packages. All packages used for this script are already part of the Python Standard Library. No additional dependancies are required.
 
 # Command Line Arguments
 
-You can run the script from the command line and provide the source and base destination folders as arguments. No additional dependancies need to be installed, all packages used are part of the Python Standard Library
+The preferred way to run this script is using command line as a Super -user/Administrator on your Device. Only two arguments need to be passed:
+* The source folder/directory.
+* The base destination folder/directory.
 
-To run the script from cmd, cd to the project directory, and run the following command
+# Deployment
+To run the script via command line, use the following code:
 
-            python fileorganizer_windows.py source_folder base_destination_folder 
-            
-            (or)
-            
-            python3 fileorganizer_linux.py source_folder base_destination_folder
-            
-depending on what OS you're running            
+### On Windows:
+Once command prompt is open as administrator, change directory to the folder containing fileorginizer using the "cd" command. For Example:
+```
+cd "C:\Users\[username]\Downloads\file_organizer
+```
+Once the directory is changed, use the following command:
+```
+python fileorganizer_windows.py [source_folder] [base_destination_folder] 
+```         
+Replace the [source_folder] [base_destination_folder] with appropriate path for the respective folders.
 
-Replace source_folder and base_destination_folder as per your requirements.
+### On Linux:
+Open the terminal in root mode by using "sudo" command. Then change directory to the sub-directory containing file_orginizer using the "cd" command. For example
+```
+cd ~/Downloads/file_organizer
+```
+Once in the directory, use the following command to deploy file_organizer:
+```            
+python3 fileorganizer_linux.py [source_folder] [base_destination_folder]
+```
+Replace the [source_folder] [base_destination_folder] with appropriate path for the respective directories.
 
-
+Happy Ordanizing!
 
 
