@@ -4,13 +4,13 @@ or 'Organizer' if you prefer.
 
 ## Table Of Contents:
 
-1.  [Overview](#Overview:)
-2.  [Syntax](#Syntax:)
-3.  [Supported File types](#Supported File Types:)
+1.  [Overview](#Overview)
+2.  [Syntax](#Syntax)
+3.  [Supported File types](#Supported File Types)
 
 
 
-## Overview:
+## Overview
 
 Arranges files into folders based on their extension type.
 
@@ -22,7 +22,7 @@ No dependencies or additional libraries required.
 
 
 
-## Syntax:
+## Syntax
 
 1. Start your favorite Command-Line program, in **administrator** or **sudo** mode as per OS.
 
@@ -50,7 +50,7 @@ No dependencies or additional libraries required.
 
 
 
-## Supported File Types:
+## Supported File Types
 
 There are around **1406** extensions currently supported.
 
