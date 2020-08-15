@@ -1,12 +1,12 @@
-# **File Organiser**
+# **File Organizer**
 
 or 'Organizer' if you prefer.
 
 ## Table Of Contents:
 
-1. [Overview](#Overview:)
-2. [Syntax](#Syntax:)
-3. [Supported file types](#Supported File Types:)
+1.  [Overview](#Overview:)
+2.  [Syntax](#Syntax:)
+3.  [Supported File types](#Supported File Types:)
 
 
 
@@ -24,7 +24,7 @@ No dependencies or additional libraries required.
 
 ## Syntax:
 
-1. Start your favorite Command-Line program.
+1. Start your favorite Command-Line program, in **administrator** or **sudo** mode as per OS.
 
 2. Change your current directory, to where the project is saved.
 
