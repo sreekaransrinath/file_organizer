@@ -4,9 +4,9 @@ or 'Organizer' if you prefer.
 
 ## Table Of Contents:
 
-1.  [Overview](#Overview)
-2.  [Syntax](#Syntax)
-3.  [Supported File types](#Supported File Types)
+1.  [Overview](#overview)
+2.  [Syntax](#syntax)
+3.  [Supported File types](#supported-file-types)
 
 
 
