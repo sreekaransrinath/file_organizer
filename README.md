@@ -120,7 +120,7 @@ There are around **1406** extensions currently supported.
 
    
 
-   [Jump to the top](#Table Of Contents:)
+   [Jump to the top](#table-of-contents)
 
    
 
