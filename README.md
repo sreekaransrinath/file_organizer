@@ -116,8 +116,6 @@ There are around **1406** extensions currently supported.
    - C++
    - C2hs Haskell
 
-   **In Progress**
-
    
 
    [Jump to the top](#file-organizer)
