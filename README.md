@@ -4,11 +4,11 @@ or 'Organizer' if you prefer.
 
 ## Table Of Contents:
 
-1.  [Overview](#overview)
-2.  [Syntax](#syntax)
-3.  [Supported File types](#supported-file-types)
+### 1.  [Overview](#overview)
+### 2.  [Syntax](#syntax)
+### 3.  [Supported File types](#supported-file-types)
 
-
+---
 
 ## Overview
 
@@ -19,46 +19,50 @@ No dependencies or additional libraries required.
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
-
+---
 
 
 ## Syntax
 
-1. Start your favorite Command-Line program, in **administrator** or **sudo** mode as per OS.
+1. Start your favorite Command-Line program, in **administrator** or **sudo** mode as per your Operating System.
 
 2. Change your current directory, to where the project is saved.
 
 3. Copy paths of your Source and Destination Folders
 
-   **Source Folder** -> Where your files are stored to be organised.
+   **Source Folder** ---> Where your files are stored to be organised.
 
-   **Destination Folder** -> Where you want your files to be organised.
+   **Destination Folder** ---> Where you want your files to be organised.
 
-4. For Linux,
+4. For Linux based systems,
 
-   ```python3 fileorganizer_linux.py source_folder destination_folder```
+```bash
+python3 fileorganizer_linux.py <source_folder> <destination_folder>
+```
 
-   For Windows,
+   For Windows systems,
 
-   ```python fileorganizer_windows.py source_folder destination_folder```
+```shell
+python fileorganizer_windows.py <source_folder> <destination_folder>
+```
 
-5. Replace the *'source_folder'* and *'destination_folder'* in the commands as your choice.
+5. Replace the **'source_folder'** and **'destination_folder'** in the commands as per your choice.
 
 6. Let it run !
 
 7. You might be asked a few questions, if there is a possibility of overwriting. Answer corresponding to your required action.
 
-
+---
 
 ## Supported File Types
 
 There are around **1406** extensions currently supported.
 
-1. Documents
+### 1. Documents
 
-2. Financial Records
+### 2. Financial Records
 
-3. Media 
+### 3. Media 
 
    - Adobe - AfterEffects
    - Adobe - Director
@@ -69,7 +73,7 @@ There are around **1406** extensions currently supported.
    - Video
    - Video Editing
 
-4. Other
+### 4. Other
 
    - Compressed
    - Desktop-Publishing
@@ -81,7 +85,7 @@ There are around **1406** extensions currently supported.
    - Internet-related
    - VMs (Virtual Machines)
 
-5. Programming
+### 5. Programming
 
    - ABAP
    - AGS Script
@@ -116,7 +120,7 @@ There are around **1406** extensions currently supported.
    - C++
    - C2hs Haskell
 
-   **In Progress**
+   **Currently in development stage**
 
    
 
