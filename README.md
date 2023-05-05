@@ -1,7 +1,5 @@
 # **File Organizer**
 
-or 'Organizer' if you prefer.
-
 ## Table Of Contents:
 
 ### 1.  [Syntax](#syntax)
