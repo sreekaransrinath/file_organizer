@@ -10,31 +10,16 @@
 
 ## Syntax
 
-1. Start your favorite Command-Line program, in **administrator** or **sudo** mode as per your Operating System.
+   ```bash
+   python3 fileorganizer_linux.py -s <SOURCE_FOLDER> -o <OUTPUT_FOLDER>
+   ```
 
-2. Change your current directory, to where the project is saved.
-
-3. Copy paths of your Source and Destination Folders
-
-   **Source Folder** ---> Where your files are stored to be organised.
-
-   **Destination Folder** ---> Where you want your files to be organised.
-
-4. For Linux based systems,
-
-```bash
-python3 fileorganizer_linux.py <source_folder> <destination_folder>
-```
-
-5. Replace the **'source_folder'** and **'destination_folder'** in the commands as per your choice.
-
-6. Let it run !
-
-7. You might be asked a few questions, if there is a possibility of overwriting. Answer corresponding to your required
-   action.
+   - If you want to delete sub folders:
+   ```bash
+   python3 fileorganizer_linux.py -s <SOURCE_FOLDER> -o <OUTPUT_FOLDER> -d
+   ```
 
 ---
-
 ## Supported File Types
 
 There are around **1406** extensions currently supported.
