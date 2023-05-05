@@ -4,23 +4,11 @@ or 'Organizer' if you prefer.
 
 ## Table Of Contents:
 
-### 1.  [Overview](#overview)
-### 2.  [Syntax](#syntax)
-### 3.  [Supported File types](#supported-file-types)
+### 1.  [Syntax](#syntax)
+
+### 2.  [Supported File types](#supported-file-types)
 
 ---
-
-## Overview
-
-Arranges files into folders based on their extension type.
-
-No dependencies or additional libraries required.
-
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
-
----
-
 
 ## Syntax
 
@@ -40,17 +28,12 @@ No dependencies or additional libraries required.
 python3 fileorganizer_linux.py <source_folder> <destination_folder>
 ```
 
-   For Windows systems,
-
-```shell
-python fileorganizer_windows.py <source_folder> <destination_folder>
-```
-
 5. Replace the **'source_folder'** and **'destination_folder'** in the commands as per your choice.
 
 6. Let it run !
 
-7. You might be asked a few questions, if there is a possibility of overwriting. Answer corresponding to your required action.
+7. You might be asked a few questions, if there is a possibility of overwriting. Answer corresponding to your required
+   action.
 
 ---
 
@@ -62,71 +45,60 @@ There are around **1406** extensions currently supported.
 
 ### 2. Financial Records
 
-### 3. Media 
+### 3. Media
 
-   - Adobe - AfterEffects
-   - Adobe - Director
-   - Audio
-   - Audio Editing
-   - Images
-   - Playlist
-   - Video
-   - Video Editing
+- Adobe - AfterEffects
+- Adobe - Director
+- Audio
+- Audio Editing
+- Images
+- Playlist
+- Video
+- Video Editing
 
 ### 4. Other
 
-   - Compressed
-   - Desktop-Publishing
-   - Disc
-   - Encoded
-   - Encrypted
-   - Executable
-   - Fonts
-   - Internet-related
-   - VMs (Virtual Machines)
+- Compressed
+- Desktop-Publishing
+- Disc
+- Encoded
+- Encrypted
+- Executable
+- Fonts
+- Internet-related
+- VMs (Virtual Machines)
 
 ### 5. Programming
 
-   - ABAP
-   - AGS Script
-   - AMPL
-   - ANTLR
-   - APL
-   - ASP
-   - ActionScript
-   - Ada
-   - Agda
-   - Alloy
-   - AppleScript
-   - Arc
-   - Arduino
-   - AspectJ
-   - Assembly
-   - Augeas
-   - AutoHotKey
-   - AutoIt
-   - Awk
-   - Batch File
-   - Befunge
-   - Bison
-   - BlitzBasic
-   - BlitzMax
-   - Bluespec
-   - Boo
-   - BrightScript
-   - Bro
-   - C
-   - C#
-   - C++
-   - C2hs Haskell
-
-   **Currently in development stage**
-
-   
-
-   [Jump to the top](#table-of-contents)
-
-   
-
-
-
+- ABAP
+- AGS Script
+- AMPL
+- ANTLR
+- APL
+- ASP
+- ActionScript
+- Ada
+- Agda
+- Alloy
+- AppleScript
+- Arc
+- Arduino
+- AspectJ
+- Assembly
+- Augeas
+- AutoHotKey
+- AutoIt
+- Awk
+- Batch File
+- Befunge
+- Bison
+- BlitzBasic
+- BlitzMax
+- Bluespec
+- Boo
+- BrightScript
+- Bro
+- C
+- C#
+- C++
+- C2hs Haskell

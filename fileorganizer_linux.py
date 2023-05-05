@@ -17,111 +17,67 @@ def cmd_args():
 
     return src_base, dst_base
 
-def cleandesk(src_base, dst_base):
 
+def execute(src_base, dst_base):
     for filename in os.listdir(src_base):
-        i = 1
 
-        split = os.path.splitext(src_base + filename)
-        root_name = split[0]
+        path = src_base + filename
+
+        if os.path.isdir(path):
+            folder_path = path + '/'
+            execute(folder_path, dst_base)
+
+        split = os.path.splitext(path)
         extension = split[1]
-        print(f'The file {root_name} is of the type {extension}')
 
         try:
-       # Dest is the final argument for destination folder that I feed into
-       # the file copy method. It is updated with the appropriate filetype_and
-       # year-based directories using conditionals below
             dest = dst_base + extensiondict.extension_dict[extension.lower()]
-            print(f'The destination folder based on file type is {dest}')
 
-            mdate = os.path.getmtime(src_base + filename)
+            mdate = os.path.getctime(src_base + filename)
             year = datetime.fromtimestamp(int(mdate)).strftime("%Y")
-            print(f'The year of modification for this file is {year}')
+            month = datetime.fromtimestamp(int(mdate)).strftime("%m")
+            day = datetime.fromtimestamp(int(mdate)).strftime("%d")
 
-            dest = f'{dest}/{year}'
-            print("Destination folder with year added is", dest)
+            dest = f'{dest}/{year}/{month}/{day}'
 
             final_path_exists = os.path.exists(dest)
-            print("Does the appropriate destination directory exist? ", final_path_exists)
 
             if not final_path_exists:
                 os.makedirs(dest)
-                final_path_exists = os.path.exists(dest)
-                print("The destination directory now exists.")
-
-            print('The file name is ', filename)
 
             stripped_filename = filename.replace(" ", "\\ ").replace("'", "\\" + "\'")
-            print('The stripped file name is ', stripped_filename)
-
-            # file_exists_in_dest checks if the specified directory is a file
-            # which indicates that the filename in fact exists. If it does,
-            # the block underneath this line either creates a new name by
-            # appending numbers to the end of the filename or leaves the
-            # file alone, based on a decision made by the user
 
             file_exists_in_dest = os.path.isfile(dest + '/' + filename)
-            print('Does the file already exist in destination? ', file_exists_in_dest)
 
             filepath = src_base + stripped_filename
-            print('The final source file path to be passed as argument is ', filepath)
 
             file_exists_in_src = os.path.isfile(src_base + filename)
-            print(file_exists_in_src)
 
             if file_exists_in_dest:
-                moveornot = input(filename + ' already exists in the destination directory. \
-                \nWould you like me to move the file to the destination after renaming it (or) \
-                leave it alone? \nPress 1 for the first option and press any other key to choose \
-                the second. ')
-
-                if moveornot == '1':
-
-                    while file_exists_in_dest:
-                        i += 1
-                        newpath = root_name + str(i) + extension
-                        os.rename(filepath, newpath)
-                        newpathsplit = newpath.split("/")
-                        lastindex = len(newpathsplit)-1
-                        newname = newpathsplit[lastindex]
-                        movefile(newpath, dest)
-                        file_exists_in_dest = os.path.isfile(dest + '/' + newname)
-                        print('A name clash occurred in the process but was fixed.')
-                        filename = newname
-
-                else:
-                    print('Alright, I\'ll leave it alone')
-                    print(filename + ' was not transferred from ' + src_base + ' to ', dest)
+                print(filename + ' was not transferred from ' + src_base + ' to ', dest)
+                not_moved = True
 
             else:
-
                 if file_exists_in_src and not file_exists_in_dest:
-                    print('The file exists in source and not in dest. Transferring... ')
                     movefile(filepath, dest)
 
-            if not os.path.isfile(src_base + filename):
-                print(filename, ' was deleted from ', src_base, '\n\n')
-
-            else:
-                print(filename, ' was not deleted from ', src_base, '\n\n')
-
         except:
-            _ = extension.lower() not in extensiondict.extension_dict.keys()
+            print(extension.lower() not in extensiondict.extension_dict.keys(),
+                  f"Unknown extension: {extension.lower()}")
 
 
 # movefile is the function that handles moving of files from source to destination folder
 def movefile(src, dst):
-    command = 'mv ' + src + ' ' + dst
-    print('The command to be passed to shell is ', command)
-    os.system(command)
-    print("The file was successfully transferred")
+    os.system('mv ' + src + ' ' + dst)
+
 
 def run():
     """
     Orchestrator to run the functions
     """
     src_base, dst_base = cmd_args()
-    cleandesk(src_base, dst_base)
+    execute(src_base, dst_base)
+
 
 if __name__ == "__main__":
     run()
